@@ -1,11 +1,17 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <Tetris />
+  </div>
 </template>
 
 <script>
+import Tetris from "./components/Tetris";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    Tetris,
+  },
 };
 </script>
 
