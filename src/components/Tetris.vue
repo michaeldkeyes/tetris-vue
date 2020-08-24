@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Stage />
+    <Stage :stage="stage" />
     <aside>
       <div>
         <Display text="Score" />
@@ -17,12 +17,20 @@ import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
 
+import { createStage } from "../gameHelpers";
+
 export default {
   name: "Tetris",
   components: {
     Stage,
     Display,
     StartButton,
+  },
+  data: function () {
+    return {};
+  },
+  created: function () {
+    this.stage = createStage();
   },
 };
 </script>

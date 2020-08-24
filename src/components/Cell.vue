@@ -6,7 +6,7 @@
 export default {
   name: "Cell",
   props: {
-    type: String,
+    type: Number,
   },
 };
 </script>
